@@ -2,24 +2,24 @@
 
 require ("classes/Test.php");
 
-$test = new Test();
+$myTest = new Test();
 
-echo "Siandienos data yra: " . $test->dayToday() . "<br><br>";
+echo "Siandienos data yra: " . $myTest->dayToday() . "<br><br>";
 
-$siandienos_data = $test->dayToday() . "<br><br>";
+$siandienos_data = $myTest->dayToday() . "<br><br>";
 
-$test->storeToCookie($siandienos_data);
+$myTest->storeToCookie($siandienos_data);
 
 echo "Cookie data: " . $_COOKIE["datoscookie"];
 
-echo $test->isEven(16) . "<br><br>";
+echo $myTest->isEven(16) . "<br><br>";
 
-echo $test->setLanguage("Russia") . "<br><br>";
+echo $myTest->setLanguage("Russia") . "<br><br>";
 
-print_r ($test->discount([5,10,15,20,30,58]));
+print_r ($myTest->discount([5,10,15,20,30,58]));
 
-echo $test->storeRandom() . "<br><br>";
+echo $myTest->storeRandom() . "<br><br>";
 
-echo $test->glueText("this is a very simple sentence") . "<br><br>";
+echo $myTest->glueText("this is a very simple sentence") . "<br><br>";
 
-echo $test->textGen();
+echo $myTest->textGen();
